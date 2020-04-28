@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АКИТЭ.Абитуриент</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="nav">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="img/social/ok.png" alt=""></a>
+                        <a href="#"><img src="img/social/tube.png" alt=""></a>
+                        <a href="#"><img src="img/social/vk.svg" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="document">
+        <div class="container">
+            <div class="document-content">
+                <h2 class="document-title">
+                    Для поступления в колледж необходимы следующие документы
+                </h2>
+                <ol type="1">
+                    <li>Заявление (заполняется лично);</li>
+                    <li>Документ об образовании (оригинал);</li>
+                    <li>Медицинская справка (форма 0-86-У)</li>
+                    <li>Фотографии 3х4 (6 штук);</li>
+                    <li>Карта профилактических прививок (заверенная копия);</li>
+                    <li>Характеристика из школы;</li>
+                    <li>Паспорт или свидетельство о рождении (оригинал или 2 копии) предъявляется лично;</li>
+                    <li>Идентификационный код (2 копии);</li>
+                    <li>Справка с места жительства – 1 шт. (ЖЭК, квартальный, поселковый совет);</li>
+                    <li>При наличии, ксерокопия военного билета или приписного свидетельства, или справка с военкомата;
+                    </li>
+                    <li>Документы, дающие право на льготы установленные законодательством ЛНР (если есть в наличии);
+                    </li>
+                    <li>Документы, подтверждающие высокий уровень учебных достижений абитуриента (если есть в наличии);
+                    </li>
+                    <li>Сертификаты ЕГЭ или ВНО (если есть в наличии).</li>
+                    <li>20 листов белой бумаги;</li>
+                    <li>Папка для бумаг (с завязками).</li>
+                </ol>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <div class="form-content">
+                <h2 class="form-title">
+                    Форма загрузки
+                </h2>
+                <hr>
+                <form action="#" method="POST" id="myform" enctype="multipart/form-data">
+                    <input id="name" type="text" class="text" placeholder="Введите ФИО" autocomplete="off">
+                    <div class="load">
+                        <div class="block">
+                            <span class="desc">Загрузить заявление</span>
+                            <input type="file" name="myfile"  id="myfile" multiple="multiple" class="input">
+                            <div class="form-status"></div>
+                        </div>
+                         <div class="block">
+                            <span class="desc">Загрузить документ об образовании </span>
+                            <input type="file" name="myfile" id="myfile" multiple="multiple"> 
+                            <div class="form-status"></div>
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить медицинскую справку</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить фотографию</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить карту профилактических прививок </span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить характеристику</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить паспорт или свидетельство о рождении</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить идентификационный код</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить справку с места жительства</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить военный билет или приписное</span>
+                            <input type="file" name="" id="" multiple="multiple"> 
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить документы на льготу</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить документы подтверждающие высоктй уровень абитуриента</span>
+                            <input type="file" name="" id="" multiple="multiple"> 
+                        </div>
+                        <div class="block">
+                            <span class="desc">Загрузить сертификаты ЕГЭ или ВНО (если есть в наличии)</span>
+                            <input type="file" name="" id="" multiple="multiple">
+                        </div>
+                    </div>
+                    <input class="document-btn" type="submit" value="Отправить" name="send" id="send">
+                   
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
